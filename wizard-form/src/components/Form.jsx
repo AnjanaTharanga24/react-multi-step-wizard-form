@@ -16,6 +16,10 @@ export default function Form() {
             case 1:
                 return (
                     <div>
+                        <div className='mb-3'>
+                            <h2>Basic details</h2>
+                        </div>
+
 
                         <div className="form-group">
                             <label htmlFor="exampleInputEmail1">Full Name</label>
@@ -77,57 +81,50 @@ export default function Form() {
                 return (
                     <div>
 
+                        <div className='mb-3'>
+                            <h2>Work details</h2>
+                        </div>
+
                         <div className="form-group">
-                            <label htmlFor="exampleInputEmail1">Full Name</label>
+                            <label htmlFor="exampleInputEmail1">Department Name</label>
                             <input
                                 type="text"
                                 className="form-control mt-2"
                                 id="exampleInputEmail1"
                                 aria-describedby="emailHelp"
-                                placeholder="Enter name"
+                                placeholder="Enter department name"
                             />
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">Age</label>
+                            <label htmlFor="exampleInputPassword1">Department Id</label>
                             <input
                                 type="number"
                                 className="form-control mt-2"
                                 id="exampleInputPassword1"
-                                placeholder="Enter age"
+                                placeholder="Enter department id"
                             />
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">Email Address</label>
+                            <label htmlFor="exampleInputPassword1">Category</label>
                             <input
                                 type="email"
                                 className="form-control mt-2"
                                 id="exampleInputPassword1"
-                                placeholder="Enter email"
+                                placeholder="Enter category"
                             />
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">Contact Number</label>
+                            <label htmlFor="exampleInputPassword1">Position</label>
                             <input
                                 type="password"
                                 className="form-control mt-2"
                                 id="exampleInputPassword1"
-                                placeholder="Enter Mobile"
+                                placeholder="Enter Position"
                             />
                         </div>
-
-                        <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">Password</label>
-                            <input
-                                type="password"
-                                className="form-control mt-2"
-                                id="exampleInputPassword1"
-                                placeholder="Enter Mobile"
-                            />
-                        </div>
-
 
 
 
@@ -137,6 +134,9 @@ export default function Form() {
             case 3:
                 return (
                     <div>
+                        <div className='mb-3'>
+                            <h2>Dependent details</h2>
+                        </div>
                         <div className="form-group">
                             <label htmlFor="exampleInputEmail1">Full Name</label>
                             <input
@@ -177,18 +177,6 @@ export default function Form() {
                                 placeholder="Enter Mobile"
                             />
                         </div>
-
-                        <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">Password</label>
-                            <input
-                                type="password"
-                                className="form-control mt-2"
-                                id="exampleInputPassword1"
-                                placeholder="Enter Mobile"
-                            />
-                        </div>
-
-
                     </div>
 
 
@@ -199,7 +187,7 @@ export default function Form() {
     };
     return (
         <div>
-            <form className='p-5 w-75 form-body bg-danger'>
+            <form className='p-5 w-75 form-body card shadow'>
 
                 {renderStep()}
 

@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Home() {
     return (
         <div>
-            <div>
+            <h1 className='mt-5'>Wizard Form Example</h1>
+            <div >
                 <Form />
             </div>
         </div>
